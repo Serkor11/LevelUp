@@ -12,13 +12,6 @@ public class Message {
     private User author;
     private Date date;
 
-    public Message(int messageId, String text, User author, Date date) {
-        this.messageId = messageId;
-        this.text = text;
-        this.author = author;
-        this.date = date;
-    }
-
     public int getMessageId() {
         return messageId;
     }

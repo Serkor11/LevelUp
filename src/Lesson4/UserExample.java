@@ -1,4 +1,6 @@
-package Lesson4.Task1;
+package Lesson4;
+
+import Lesson4.Task1.User;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
