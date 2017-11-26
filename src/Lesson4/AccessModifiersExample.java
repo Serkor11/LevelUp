@@ -15,6 +15,18 @@ public class AccessModifiersExample {
         int z = accessModifiers.getD();
         z += 2;
         System.out.println(z);
+
+
+         /*int ef = accessModifiers.setd(-1); //вопрос
+        System.out.println(accessModifiers.getD());
+        System.out.println(ef);*/
+
+        int z1 = accessModifiers.getD();
+        System.out.println(z1);
+        z1=33;
+        System.out.println(z1);
+
     }
+
 }
 

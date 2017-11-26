@@ -10,4 +10,10 @@ public class Post {
     int postId;
     String title;
     Date postedAt;
+
+    public Post(int postId, String title, Date postedAt) {
+        this.postId = postId;
+        this.title = title;
+        this.postedAt = postedAt;
+    }
 }
