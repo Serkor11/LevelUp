@@ -8,18 +8,17 @@ import java.util.Date;
  */
 public class User {
 
-    int userId;
-    String name;
-    String lastName;
-    String email;
-    Date registrationDate;
+        int userId;
+        String name;
+        String lastName;
+        String email;
+        Date registrationDate;
 
-    public User(int userId, String name,/* String lastName, String email,*/ Date registrationDate){
-        this.userId = userId;
-        this.name = name;
-        //this.lastName = lastName;
-        //this.email = email;
-        this.registrationDate = registrationDate;
-    }
-
+    public User( int userId, String name, String lastName, String email, Date registrationDate){
+            this.userId = userId;
+            this.name = name;
+            this.lastName = lastName;
+            this.email = email;
+            this.registrationDate = registrationDate;
+        }
 }
