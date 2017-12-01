@@ -1,6 +1,7 @@
 package Lesson4.Task1;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * Created by Zu on 25.11.2017.
@@ -42,5 +43,29 @@ public class Message {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Message))
+            return false;
+
+        Message other = (Message) object;
+        return messageId == other.messageId &&
+                text.equals(other.text) &&
+                author.equals(other.author) &&
+                date.equals(other.date);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + messageId;
+        result = 31 * result + text.hashCode();
+        result = 31 * result + author.hashCode();
+        result = 31 * result + date.hashCode();
+        return result;
     }
 }
