@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class ReportExample {
     public static void main(String[] args) {
-        Report report = new Report();
-        TableReport tableReport = new TableReport("fef",new Date());
+        Report report = new Report("user",new Date());
+       // TableReport tableReport = new TableReport("fef",new Date());
     }
 }

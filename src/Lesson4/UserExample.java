@@ -14,7 +14,7 @@ public class UserExample {
         Calendar calendar = Calendar.getInstance();
         //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         calendar.set(1,2,3);
-        User user1 = new User(123,"Имя",calendar.getTime());
+        //User user1 = new User(123,"Имя",calendar.getTime());
         //System.out.println(user1.name + " " + user1.userId + " " + simpleDateFormat.format(calendar.getTime()));
     }
 
